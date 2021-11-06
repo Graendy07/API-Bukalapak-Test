@@ -1,0 +1,297 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-06T10:07:54.710Z",
+        "line": 6,
+        "name": "User validate data is correct",
+        "description": "",
+        "id": "check-data-type-and-the-response-with-input-data;user-validate-data-is-correct",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6513000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user send GET request to without authentication and param",
+            "match": {
+              "location": "steps.ApiRequestSteps.user_send_GET_request_to_without_authentication_and_param()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 71000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user analyze the response",
+            "match": {
+              "location": "steps.ApiRequestSteps.user_analyze_the_response()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user see status code is 200 \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.ApiRequestSteps.user_see_status_code_is(java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1863000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user validate response is same with json schema in \"testData/response.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testData/response.json\"",
+                  "offset": 51
+                }
+              ],
+              "location": "steps.ApiRequestSteps.user_validate_response_is_same_with_json_schema_in(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 769000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user see below data is correct as Integer :",
+            "match": {
+              "location": "steps.ApiRequestSteps.user_see_below_data_is_correct_as_number(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userId[99]",
+                  "10"
+                ]
+              },
+              {
+                "cells": [
+                  "id[99]",
+                  "100"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user see below data is correct as string :",
+            "match": {
+              "location": "steps.ApiRequestSteps.user_see_below_data_is_correct_as_string(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "title[0]",
+                  "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"
+                ]
+              },
+              {
+                "cells": [
+                  "body[0]",
+                  "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AllTesting"
+          },
+          {
+            "name": "@Testing1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-06T10:08:04.003Z",
+        "line": 19,
+        "name": "Post and check the response",
+        "description": "",
+        "id": "check-data-type-and-the-response-with-input-data;post-and-check-the-response",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 829000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user send POST request to without authentication and param",
+            "match": {
+              "location": "steps.ApiRequestSteps.user_send_POST_request_to_without_authentication_and_param()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user analyze the response",
+            "match": {
+              "location": "steps.ApiRequestSteps.user_analyze_the_response()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user see status code is 201 \"Created\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 24
+                },
+                {
+                  "val": "\"Created\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.ApiRequestSteps.user_see_status_code_is(java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user validate response is same with json schema in \"testData/response2.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testData/response2.json\"",
+                  "offset": 51
+                }
+              ],
+              "location": "steps.ApiRequestSteps.user_validate_response_is_same_with_json_schema_in(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 57000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user validate the body is match",
+            "match": {
+              "location": "steps.ApiRequestSteps.user_validate_the_body_is_match()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user see below data is correct as Integer :",
+            "match": {
+              "location": "steps.ApiRequestSteps.user_see_below_data_is_correct_as_number(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userId",
+                  "12"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user see below data is correct as string :",
+            "match": {
+              "location": "steps.ApiRequestSteps.user_see_below_data_is_correct_as_string(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "title",
+                  "recommendation"
+                ]
+              },
+              {
+                "cells": [
+                  "body",
+                  "motorcycle"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AllTesting"
+          },
+          {
+            "name": "@Testing2"
+          }
+        ]
+      }
+    ],
+    "name": "Check data-type and the response with input data",
+    "description": "",
+    "id": "check-data-type-and-the-response-with-input-data",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/jsonPlaceholder.feature",
+    "tags": [
+      {
+        "name": "@AllTesting",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
