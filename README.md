@@ -9,7 +9,7 @@ Automation Testing using API Rest Assured & Cucumber
 4. Java
 5. Maven
 
-#How to run
+## How to run
 1. Input any tags that you want to run in TestRunner
 2. Right click the AllTestRunner
 3. Click "Run 'AllTestRunner'"
